@@ -24,7 +24,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offse
 header.nav{background:var(--white);border-bottom:1px solid var(--line)}
 header.nav .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
 .brand{font:600 20px var(--serif);color:var(--ink);text-decoration:none}
-nav a{margin-right:20px;color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
 nav a:hover{color:var(--blue);text-decoration:underline}
 .hero{padding:72px 0 56px}
 .hero .wrap{display:grid;grid-template-columns:1fr 260px;gap:48px;align-items:center}
@@ -61,9 +62,9 @@ ol.steps li::before{content:counter(s);display:block;font:600 26px var(--serif);
 ol.steps li span{display:block;font-weight:400;font-size:14px;color:var(--muted);margin-top:4px}
 .loop{margin:16px 0 0;font-size:15px;opacity:.95}
 .note{font-size:15px;color:var(--muted);margin-top:14px}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
 .skills ul{margin:8px 0 0;padding-left:20px}
-.contact a{margin-right:22px;font-weight:600}
+.contact a{display:inline-block;margin:0 22px 8px 0;font-weight:600;overflow-wrap:anywhere}
 footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 @media (max-width:760px){
   .hero .wrap{grid-template-columns:1fr}
@@ -77,7 +78,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
 <header class="nav"><div class="wrap">
   <a class="brand" href="#top">Andrew Kaimana</a>
   <nav aria-label="Main">
-    <a href="#experience">Experience</a><a href="#websites">Websites</a><a href="#writing">Writing</a><a href="#process">Process</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    <a href="#experience">Experience</a><a href="#websites">Websites</a><a href="#writing">Writing</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
   </nav>
 </div></header>
 
@@ -86,7 +87,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
   <div>
     <h1>Andrew Kaimana</h1>
     <p class="sub">Marketing, digital and creative work</p>
-    <p class="lede">I plan and run marketing that moves customers from first email to repeat purchase. My background spans lifecycle and email strategy, website work, writing, and analytics.</p>
+    <p class="lede">I'm a marketer with four and a half years of email and lifecycle experience. I also help build websites people enjoy using, and I've created social media content. I'm looking to grow across marketing.</p>
     <div class="btns"><a class="btn-main" href="#experience">See my work</a><a class="btn-alt" href="#contact">Get in touch</a></div>
   </div>
   <img class="portrait" src="myself.jpg" alt="Portrait of Andrew Kaimana">
@@ -94,7 +95,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
 
 <section id="experience"><div class="wrap">
   <h2>Marketing and lifecycle experience</h2>
-  <p class="intro">Four and a half years running email and lifecycle marketing for an ecommerce brand. I can't show internal screenshots, so these are written case studies.</p>
+  <p class="intro">Four and a half years running email and lifecycle marketing across three ecommerce brands. I can't show internal screenshots, so these are written case studies.</p>
   <div class="grid">
     <article class="card"><h3>Post-purchase flow redesign</h3>
       <dl><dt>Challenge</dt><dd>The post-purchase flow had room to generate more revenue.</dd>
@@ -111,19 +112,6 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
   </div>
   <p class="note"><strong>Overall, approximately:</strong> open rates up 20–25%, and owned channels contributing roughly 20–25% of monthly revenue.</p>
   <!-- EDIT: add specifics in your own words; keep numbers approximate and employer unnamed -->
-
-  <h3 style="margin-top:48px">How I build an email flow</h3>
-  <p class="intro">A general framework for lifecycle work, not a copy of any company's setup.</p>
-  <ol class="steps" style="color:inherit">
-    <li>Decide the message<span>What do we want to say?</span></li>
-    <li>Choose the audience<span>Who should get it?</span></li>
-    <li>Build the segment</li>
-    <li>Build the flow</li>
-    <li>A/B test<span>Subject lines and content</span></li>
-    <li>Optimize timing<span>Send scheduling</span></li>
-    <li>Check deliverability<span>No spammy subject lines</span></li>
-  </ol>
-  <p class="loop note">Then measure the results and loop back to the first step.</p>
 </div></section>
 
 <section id="recognition"><div class="wrap">
@@ -162,34 +150,33 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px soli
     <article class="card"><span class="tag">Academic project</span><h3>Turkey Trot 5K marketing plan</h3><p>An event marketing plan for a charity 5K: objective, local demographics, target audience and promotion.</p><p><a href="turkey-trot-marketing-plan.pdf">Read the full document (PDF)</a></p></article>
     <article class="card"><span class="tag">Group project</span><h3>Urban farming strategy guide</h3><p>A post-launch plan for an advocacy organization covering mobile design, accessibility, social media, SEO and email newsletters.</p><p><a href="urban-farming-strategy-guide.pdf">Read the full document (PDF)</a></p></article>
     <article class="card"><span class="tag">Writing sample</span><h3>Plain-language tax explainer for restaurant owners</h3><p>A short article turning an IRS rule change into clear conditions and next steps for small business readers.</p><p><a href="restaurant-deductible-article.pdf">Read the full document (PDF)</a></p></article>
-    <article class="card"><span class="tag">Group project</span><h3>Hurricane preparedness proposal</h3><p>A community outreach proposal for vulnerable residents, with audience research, recruitment and a work plan.</p><p><a href="hurricane-preparedness-proposal.pdf">Read the full document (PDF)</a></p></article>
   </div>
-</div></section>
-
-<section id="process" class="band"><div class="wrap">
-  <h2>How I approach marketing</h2>
-  <p class="intro">The same steps apply whether the project is an email flow, a website or a campaign.</p>
-  <ol class="steps">
-    <li>Understand</li><li>Research</li><li>Strategize</li><li>Create</li><li>Coordinate</li><li>Launch</li><li>Measure</li><li>Optimize</li>
-  </ol>
 </div></section>
 
 <section id="skills"><div class="wrap">
-  <h2>Tools and skills</h2>
+  <h2>Skills</h2>
   <div class="skills">
-    <div class="card"><h3>Marketing</h3><ul><li>Lifecycle and email marketing</li><li>Segmentation and automation</li><li>A/B testing, QA and UAT</li><li>Klaviyo Strategist (2026) and Deliverability (2022, 2024, 2026) certified</li></ul></div>
-    <div class="card"><h3>Platforms and data</h3><ul><li>Klaviyo, Shopify, SMSBump</li><li>Google Sheets, reporting and analysis</li><li>Basic SQL</li></ul></div>
-    <div class="card"><h3>Web and creative</h3><ul><li>HTML and CSS, including email development</li><li>Site updates and builds in WordPress and Wix</li><li>Adobe Illustrator and InDesign</li><li>Copywriting and content</li></ul></div>
+    <div class="card"><h3>Marketing and content</h3><ul><li>Copywriting, content creation and editing</li><li>Email, SMS and lifecycle marketing</li><li>Data analytics and reporting</li><li>Klaviyo Strategist (2026) and Deliverability (2022, 2024, 2026) certified</li><li>Typing speed: 110 WPM</li></ul></div>
+    <div class="card"><h3>Web and creative</h3><ul><li>Website creation and editing</li><li>Graphic design, including Adobe Illustrator and InDesign</li><li>Photography</li></ul></div>
+    <div class="card"><h3>Programming</h3><ul><li>HTML and CSS</li><li>JavaScript</li><li>C++</li><li>Basic SQL</li><li>Python (currently learning)</li></ul></div>
+    <div class="card"><h3>Tools</h3><ul><li>Klaviyo, Shopify, SMSBump</li><li>WordPress and Wix</li><li>Google Sheets and Microsoft Office</li></ul></div>
   </div>
-  <!-- EDIT: confirm skill levels (JavaScript, SQL, WordPress) before publishing -->
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education</h2>
+  <div class="grid">
+    <article class="card"><span class="tag">In progress</span><h3>Master's in Data Analytics</h3><p>Currently working toward the degree.</p></article>
+    <article class="card"><h3>B.A. in Digital Media</h3><p>University of Central Florida, 2019–2021. Focus on web and social platforms, with content and SEO emphasis.</p></article>
+    <article class="card"><h3>A.S. in Computer Science</h3><p>Nashville State Community College, 2015–2017.</p></article>
+  </div>
 </div></section>
 
 <section id="contact" class="contact"><div class="wrap">
   <h2>Contact</h2>
   <p class="intro">I'm open to marketing, lifecycle and digital roles.</p>
-  <p><a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
-  <a href="https://www.linkedin.com/in/andrew-kaimana">LinkedIn</a>
-  <a href="resume-andrew-kaimana.pdf">Resume (PDF)</a></p>
+  <p><a href="mailto:andrew.kaimana@yahoo.com">andrew.kaimana@yahoo.com</a>
+  <a href="https://www.linkedin.com/in/andrew-kaimana">LinkedIn</a></p>
 </div></section>
 </main>
 
