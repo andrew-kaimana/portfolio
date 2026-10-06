@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andrew Kaimana | Marketing, Digital &amp; Creative Work</title>
+<meta name="description" content="Portfolio of Andrew Kaimana: lifecycle and email marketing, websites, content, and creative work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F6FA; --white:#fff; --ink:#1A1D24; --muted:#555D6E;
+  --blue:#2346D1; --blue-deep:#1B35A3; --wash:#E3E9FA; --line:#CDD5E8;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 var(--sans)}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{background:var(--white);border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.brand{font:600 20px var(--serif);color:var(--ink);text-decoration:none}
+nav a{margin-right:20px;color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{color:var(--blue);text-decoration:underline}
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1fr 260px;gap:48px;align-items:center}
+h1{font:500 clamp(44px,7vw,76px)/1.02 var(--serif);letter-spacing:-.02em;margin:0 0 18px}
+.hero .lede{font-size:20px;max-width:34em;margin:0 0 24px}
+.hero .sub{color:var(--blue-deep);font:600 22px var(--serif);margin:0 0 14px}
+.btns a{display:inline-block;margin:0 10px 10px 0;padding:11px 20px;border-radius:4px;font-weight:600;text-decoration:none}
+.btn-main{background:var(--blue);color:#fff}
+.btn-main:hover{background:var(--blue-deep)}
+.btn-alt{border:2px solid var(--blue);color:var(--blue)}
+.btn-alt:hover{background:var(--wash)}
+.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;background:var(--wash);display:block}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:500 clamp(30px,4vw,40px)/1.15 var(--serif);margin:0 0 10px;letter-spacing:-.01em}
+.intro{color:var(--muted);max-width:40em;margin:0 0 32px}
+h3{font:600 23px/1.25 var(--serif);margin:0 0 6px}
+.tag{display:inline-block;background:var(--wash);color:var(--blue-deep);font-size:14px;font-weight:600;padding:2px 10px;border-radius:3px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:var(--white);border:1px solid var(--line);padding:24px;border-radius:4px}
+.card dl{margin:12px 0 0}
+.card dt{font-weight:600;color:var(--blue-deep);margin-top:10px}
+.card dd{margin:2px 0 0}
+.proj{display:grid;grid-template-columns:240px 1fr;gap:12px 32px;padding:26px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.shot{width:100%;max-width:640px;border:1px solid var(--line);border-radius:4px;display:block;margin-top:14px}
+.proj .meta{color:var(--muted);font-size:15px}
+.proj p{margin:0 0 8px}
+.band{background:var(--blue);color:#fff;border:0}
+.band h2,.band .intro{color:#fff}
+.band .intro{opacity:.9}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;counter-reset:s}
+ol.steps li{counter-increment:s;background:var(--white);color:var(--ink);padding:16px 14px;border-radius:4px;position:relative;font-weight:500;line-height:1.35}
+ol.steps li::before{content:counter(s);display:block;font:600 26px var(--serif);color:var(--blue);margin-bottom:4px}
+ol.steps li span{display:block;font-weight:400;font-size:14px;color:var(--muted);margin-top:4px}
+.loop{margin:16px 0 0;font-size:15px;opacity:.95}
+.note{font-size:15px;color:var(--muted);margin-top:14px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.skills ul{margin:8px 0 0;padding-left:20px}
+.contact a{margin-right:22px;font-weight:600}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr}
+  .portrait{max-width:240px;order:-1}
+  .proj{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top">Andrew Kaimana</a>
+  <nav aria-label="Main">
+    <a href="#experience">Experience</a><a href="#websites">Websites</a><a href="#writing">Writing</a><a href="#process">Process</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Andrew Kaimana</h1>
+    <p class="sub">Marketing, digital and creative work</p>
+    <p class="lede">I plan and run marketing that moves customers from first email to repeat purchase. My background spans lifecycle and email strategy, website work, writing, and analytics.</p>
+    <div class="btns"><a class="btn-main" href="#experience">See my work</a><a class="btn-alt" href="#contact">Get in touch</a></div>
+  </div>
+  <img class="portrait" src="images/myself.jpg" alt="Portrait of Andrew Kaimana">
+</div></div>
+
+<section id="experience"><div class="wrap">
+  <h2>Marketing and lifecycle experience</h2>
+  <p class="intro">Four and a half years running email and lifecycle marketing for an ecommerce brand. I can't show internal screenshots, so these are written case studies.</p>
+  <div class="grid">
+    <article class="card"><h3>Post-purchase flow redesign</h3>
+      <dl><dt>Challenge</dt><dd>The post-purchase flow had room to generate more revenue.</dd>
+      <dt>Approach</dt><dd>I was tasked with completely redoing every email in the flow: new copy, new structure and new messaging.</dd>
+      <dt>Result</dt><dd>Revenue from the flow grew roughly 3×.</dd></dl></article>
+    <article class="card"><h3>Campaign testing</h3>
+      <dl><dt>Challenge</dt><dd>Campaign revenue could be higher, and we needed to know what was working.</dd>
+      <dt>Approach</dt><dd>I ran more A/B tests on subject lines and body copy, then used the data to guide each decision that followed.</dd>
+      <dt>Result</dt><dd>Click rates in recent years were significantly higher than in earlier years.</dd></dl></article>
+    <article class="card"><h3>Segmentation</h3>
+      <dl><dt>Challenge</dt><dd>There was no segmentation, so everyone received the same emails.</dd>
+      <dt>Approach</dt><dd>I created audience lists so people received emails that mattered to them.</dd>
+      <dt>Result</dt><dd>More relevant sends, supported by deliverability practices I'm Klaviyo-certified in.</dd></dl></article>
+  </div>
+  <p class="note"><strong>Overall, approximately:</strong> open rates up 20–25%, and owned channels contributing roughly 20–25% of monthly revenue.</p>
+  <!-- EDIT: add specifics in your own words; keep numbers approximate and employer unnamed -->
+
+  <h3 style="margin-top:48px">How I build an email flow</h3>
+  <p class="intro">A general framework for lifecycle work, not a copy of any company's setup.</p>
+  <ol class="steps" style="color:inherit">
+    <li>Decide the message<span>What do we want to say?</span></li>
+    <li>Choose the audience<span>Who should get it?</span></li>
+    <li>Build the segment</li>
+    <li>Build the flow</li>
+    <li>A/B test<span>Subject lines and content</span></li>
+    <li>Optimize timing<span>Send scheduling</span></li>
+    <li>Check deliverability<span>No spammy subject lines</span></li>
+  </ol>
+  <p class="loop note">Then measure the results and loop back to the first step.</p>
+</div></section>
+
+<section id="recognition"><div class="wrap">
+  <h2>Recognition</h2>
+  <div class="proj" style="border:0;padding-top:0">
+    <div><img class="portrait" style="aspect-ratio:auto" src="images/ideas-award.png" alt="IDEAS For Us 2021 award graphic naming Andrew Kaimana Social Media Champion of the Year"></div>
+    <div><span class="tag">Internship, Aug–Dec 2021</span><h3>Social Media Champion of the Year, IDEAS For Us</h3>
+    <p>As a social media intern with the Orlando nonprofit IDEAS For Us, I created informative, engaging content for its Facebook and Instagram accounts. The organization named me a 2021 award winner for that work.</p></div>
+  </div>
+</div></section>
+
+<section id="websites"><div class="wrap">
+  <h2>Websites and digital</h2>
+  <p class="intro">Each project is labeled with what it was and what I did.</p>
+
+  <div class="proj"><div class="meta"><span class="tag">Real client, ongoing</span><br>WordPress</div>
+    <div><h3><a href="https://storylineatl.com/">Storyline Gallery &amp; Tattoo</a></h3>
+    <p>I did not build the original site. I maintain it for the shop: updating designs and copy, correcting addresses and hours, and adding new images as the work continues.</p>
+    <img class="shot" src="images/storyline-tattoo.png" loading="lazy" alt="Homepage of the Storyline Gallery and Tattoo website: dark hero image with the shop logo, a menu button and a Make an Appointment button"></div></div>
+
+  <div class="proj"><div class="meta"><span class="tag">Personal project</span><br>Wix</div>
+    <div><h3><a href="https://afkaimanas1223.wixsite.com/wedding-info">Wedding website</a></h3>
+    <p>My own wedding site, built to be easy to use on a phone. Pages covered the day-of schedule, travel and stay, wedding party, Q&amp;A, toasts and a photo gallery, with an RSVP button on every page. About 50 guests were invited, and RSVPs came in through the site.</p>
+    <img class="shot" src="images/wedding-website.png" loading="lazy" alt="Homepage of the wedding website with a mountain photo, the event title, venue and date, and a navigation bar with an RSVP button"></div></div>
+
+  <div class="proj"><div class="meta"><span class="tag">Concept for a prospective client</span><br>Wix</div>
+    <div><h3><a href="https://afkaimanas1223.wixsite.com/sofistouch">Sofi's Touch homepage</a></h3>
+    <p>A stylist who offers consultations, shopping trips and makeup wanted an elegant, upscale look in warm browns with plenty of space. I used a script typeface for the brand name and kept the page to one clear call to action. The client didn't respond, so it never went further. Photos are stock placeholders.</p>
+    <img class="shot" src="images/sofis-touch.png" loading="lazy" alt="Homepage concept for Sofi's Touch: brown background, script logo, short introduction and a Get Started button"></div></div>
+</div></section>
+
+<section id="writing"><div class="wrap">
+  <h2>Writing and planning</h2>
+  <p class="intro">Samples are labeled by origin, and each one opens as a PDF.</p>
+  <div class="grid">
+    <article class="card"><span class="tag">Academic project</span><h3>Turkey Trot 5K marketing plan</h3><p>An event marketing plan for a charity 5K: objective, local demographics, target audience and promotion.</p><p><a href="samples/turkey-trot-marketing-plan.pdf">Read the full document (PDF)</a></p></article>
+    <article class="card"><span class="tag">Group project</span><h3>Urban farming strategy guide</h3><p>A post-launch plan for an advocacy organization covering mobile design, accessibility, social media, SEO and email newsletters.</p><p><a href="samples/urban-farming-strategy-guide.pdf">Read the full document (PDF)</a></p></article>
+    <article class="card"><span class="tag">Writing sample</span><h3>Plain-language tax explainer for restaurant owners</h3><p>A short article turning an IRS rule change into clear conditions and next steps for small business readers.</p><p><a href="samples/restaurant-deductible-article.pdf">Read the full document (PDF)</a></p></article>
+    <article class="card"><span class="tag">Group project</span><h3>Hurricane preparedness proposal</h3><p>A community outreach proposal for vulnerable residents, with audience research, recruitment and a work plan.</p><p><a href="samples/hurricane-preparedness-proposal.pdf">Read the full document (PDF)</a></p></article>
+  </div>
+</div></section>
+
+<section id="process" class="band"><div class="wrap">
+  <h2>How I approach marketing</h2>
+  <p class="intro">The same steps apply whether the project is an email flow, a website or a campaign.</p>
+  <ol class="steps">
+    <li>Understand</li><li>Research</li><li>Strategize</li><li>Create</li><li>Coordinate</li><li>Launch</li><li>Measure</li><li>Optimize</li>
+  </ol>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Tools and skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Marketing</h3><ul><li>Lifecycle and email marketing</li><li>Segmentation and automation</li><li>A/B testing, QA and UAT</li><li>Klaviyo Strategist (2026) and Deliverability (2022, 2024, 2026) certified</li></ul></div>
+    <div class="card"><h3>Platforms and data</h3><ul><li>Klaviyo, Shopify, SMSBump</li><li>Google Sheets, reporting and analysis</li><li>Basic SQL</li></ul></div>
+    <div class="card"><h3>Web and creative</h3><ul><li>HTML and CSS, including email development</li><li>Site updates and builds in WordPress and Wix</li><li>Adobe Illustrator and InDesign</li><li>Copywriting and content</li></ul></div>
+  </div>
+  <!-- EDIT: confirm skill levels (JavaScript, SQL, WordPress) before publishing -->
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="intro">I'm open to marketing, lifecycle and digital roles.</p>
+  <p><a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
+  <a href="https://www.linkedin.com/in/andrew-kaimana">LinkedIn</a>
+  <a href="resume-andrew-kaimana.pdf">Resume (PDF)</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Andrew Kaimana</div></footer>
+</body>
+</html>
